@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Wingfoiling Spot Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Help us find your ideal spot</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="level">Level:</label>
+                <select id="level" name="level">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Confirmed">Confirmed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="flat_waves">Flat or Waves:</label>
+                <select id="flat_waves" name="flat_waves">
+                    <option value="flat">Flat water</option>
+                    <option value="waves">Waves</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ideal_wind">Ideal Wind:</label>
+                <select id="ideal_wind" name="ideal_wind">
+                    <option value="low">8-15 knots</option>
+                    <option value="medium">15-25 knots</option>
+                    <option value="high">25-35 knots</option>
+                    <option value="baston">BASTON</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <button type="submit" class="btn">Find The Right Spot</button>
+            <div id="results">
+                {% if results %}
+                <p>{{ results }}</p>
+                {% endif %}
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* Set background color and font family */
+body {
+    background-color: #0080c9;
+    font-family: Arial, sans-serif;
+}
+
+/* Set container width and center it */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Set title font size, color and margin */
+h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+/* Set form margin and padding */
+form {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Set form group margin and padding */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Set label font size and color */
+label {
+    font-size: 24px;
+    color: #0080c9;
+}
+
+/* Set select box and input field styles */
+select,
+input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Set submit button styles */
+.btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: #0080c9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Set button hover effect */
+.btn:hover {
+    background-color: #005ea1;
+}
